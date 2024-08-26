@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Aqua-Digital</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light d-none d-lg-block">
+        <div class="row align-items-center top-bar">
+            <div class="col-lg-3 col-md-12 text-center text-lg-start">
+                <a href="/" class="navbar-brand m-0 p-0">
+                    <h1 class="text-primary m-0">Aqua-Digital</h1>
+                </a>
+            </div>
+            <div class="col-lg-9 col-md-12 text-end">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <i class="fa fa-map-marker-alt text-primary me-2"></i>
+                    <p class="m-0">Проспект Абилкайыр-хана, 65в</p>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <i class="far fa-envelope-open text-primary me-2"></i>
+                    <p class="m-0">Pulsar@mail.ru</p>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-whatsapp-square"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid nav-bar bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white p-3 py-lg-0 px-lg-4">
+            <a href="/" class="navbar-brand d-flex align-items-center m-0 p-0 d-lg-none">
+                <h1 class="text-primary m-0">Plumberz</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav me-auto">
+                    <a href="/" class="nav-item nav-link active">Главная страница</a>
+                    <a href="/about" class="nav-item nav-link">О компании</a>
+                    <a href="/service" class="nav-item nav-link">Сервисы</a>
+                    <a href="/catalog" class="nav-item nav-link">Каталог</a>
+                    <a href="/contact" class="nav-item nav-link">Контакт</a>
+                    <a href="/cart" class="nav-item nav-link">Корзина</a>
+                </div>
+                <div class="mt-4 mt-lg-0 me-lg-n4 py-3 px-4 bg-primary d-flex align-items-center">
+                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 45px; height: 45px;">
+                        <i class="fa fa-phone-alt text-primary"></i>
+                    </div>
+                    <div class="ms-3">
+                        <p class="mb-1 text-white">Emergency 24/7</p>
+                        <h5 class="m-0 text-secondary">+012 345 6789</h5>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header mb-5 py-5">
+        <div class="container">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">Наши товары</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb text-uppercase">
+                    <li class="breadcrumb-item"><a class="text-white" href="/">Главная страница</a></li>
+                    <li class="breadcrumb-item text-white active" aria-current="page">Каталог</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <div class="container">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="searchInput" placeholder="Введите артикул...">
+            <button class="btn btn-primary" type="button" id="searchButton">Найти</button>
+        </div>
+    </div>
+
+    <!-- Catalog Start -->
+     
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row" id="productList">
+                </div>
+        </div>
+    </div>
+    <!-- Catalog End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Адрес</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Проспект Абилкайыр-хана, 65в</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+7</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>Pulsar@mail.ru</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Время работы</h4>
+                    <h6 class="text-light">Понедельник - Пятница</h6>
+                    <p class="mb-4">09.00 - 18:00</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Сервисы</h4>
+                    <a class="btn btn-link" href="">1</a>
+                    <a class="btn btn-link" href="">2</a>
+                    <a class="btn btn-link" href="">3</a>
+                    <a class="btn btn-link" href="">4</a>
+                    <a class="btn btn-link" href="">5</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        © <a class="border-bottom" href="#">Aqua-Digital</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            const products = [
+                {
+                    id: 1,
+                    name: 'Счетчик воды универсальный TBX DN 15',
+                    article: 'H00003297',
+                    flowRate: '1.5',
+                    accuracyClass: 'В',
+                    price: '5 214 ₸',
+                    image: 'img/product1.jpg'
+                },
+                {
+                    id: 2,
+                    name: 'Счетчик воды универсальный TBX DN 15',
+                    article: 'H00003298',
+                    flowRate: '1.5',
+                    accuracyClass: 'В',
+                    price: '5 214 ₸',
+                    image: 'img/product2.jpg'
+                },
+                {
+                    id: 3,
+                    name: 'Счетчик воды универсальный TBX DN 15',
+                    article: 'H00003291',
+                    flowRate: '1.5',
+                    accuracyClass: 'В',
+                    price: '5 214 ₸',
+                    image: 'img/product2.jpg'
+                }
+            ];
+        
+            function displayProducts(products) {
+                const productList = $('#productList');
+                productList.empty();
+                if (products.length === 0) {
+                    productList.append('<p>Нет продуктов, соответствующих выбранным фильтрам.</p>');
+                } else {
+                    products.forEach(product => {
+                        productList.append(`
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="${product.image}" class="card-img-top" alt="${product.name}">
+                <div class="card-body">
+                    <h5 class="card-title">${product.name}</h5>
+                    <p class="card-text">
+                        <strong>артикул:</strong> ${product.article}<br>
+                        <strong>расход Q, м³/ч, ном:</strong> ${product.flowRate}<br>
+                        <strong>класс точности:</strong> ${product.accuracyClass}
+                    </p>
+                    <h4 class="text-primary">${product.price}</h4>
+                    <button class="btn btn-primary add-to-cart" data-product-id="${product.id}">Добавить в корзину</button> <div class="quantity-controls"> 
+                        <button class="btn btn-sm btn-danger decrease-quantity">-</button> 
+                        <span class="quantity">1</span> 
+                        <button class="btn btn-sm btn-success increase-quantity">+</button> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    `);
+                    });
+                }
+            }
+            // Обработчик события клика по кнопке "Добавить в корзину"
+            $(document).on('click', '.add-to-cart', function() {
+                const productId = $(this).data('product-id');
+                const quantity = parseInt($(this).siblings('.quantity-controls').find('.quantity').text());
+                addToCart(productId, quantity);
+            });
+
+            function addToCart(productId, quantity) {
+                let cart = getCart();
+                let existingProductIndex = cart.findIndex(item => item.id === productId);
+
+                if (existingProductIndex !== -1) {
+                    cart[existingProductIndex].quantity += quantity;
+                } else {
+                    let product = products.find(p => p.id === productId);
+                    if (product) {
+                        cart.push({
+                            id: product.id,
+                            name: product.name,
+                            price: product.price,
+                            quantity: quantity,
+                            image: product.image
+                        });
+                    }
+                }
+
+                localStorage.setItem('cart', JSON.stringify(cart));
+                console.log(`Товар с ID ${productId} добавлен в корзину (количество: ${quantity})`);
+            }
+
+            function getCart() {
+                let cartStr = localStorage.getItem('cart');
+                return cartStr ? JSON.parse(cartStr) : [];
+            }
+
+            // Обработчики событий для кнопок изменения количества
+            $(document).on('click', '.increase-quantity', function() {
+                const quantitySpan = $(this).siblings('.quantity');
+                let currentQuantity = parseInt(quantitySpan.text());
+                quantitySpan.text(++currentQuantity);
+            });
+
+            $(document).on('click', '.decrease-quantity', function() {
+                const quantitySpan = $(this).siblings('.quantity');
+                let currentQuantity = parseInt(quantitySpan.text());
+                if (currentQuantity > 1) {
+                    quantitySpan.text(--currentQuantity);
+                }
+            });
+
+            // Initial display of products
+            displayProducts(products);
+        }); 
+        </script>
+</body>
+
+</html>
